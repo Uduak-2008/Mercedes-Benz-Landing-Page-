@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+}
+body {
+  background-color: pink;
+  margin: 20px;
+  padding: 16px;
+}
+h1 {
+  background: white;
+  color: blue;
+  font-family: Sans-Serif, Times New Roman;
+  font-style: italic;
+}
