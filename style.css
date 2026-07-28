@@ -5,12 +5,30 @@
 }
 body {
   background-color: pink;
-  margin: 20px;
-  padding: 16px;
+  text-align: center;
 }
-h1 {
-  background: white;
-  color: blue;
+header{
+  justify-content: space-between;
+  padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  border-radius: none;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: italic;
+  background: navy;
+  color: white;
+}
+header p {
+  font-size: 24px;
+}
+#box {
+  text-align: left;
+}
+h2 {
+  color: black;
   font-family: Sans-Serif, Times New Roman;
   font-style: italic;
+  padding: 12px;
 }
