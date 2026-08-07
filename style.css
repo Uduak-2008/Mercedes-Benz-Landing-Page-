@@ -81,6 +81,25 @@ nav a:hover{
   border-radius: 15px 15px 0 0;
     box-shadow: 0 20px 60px rgba(0,0,0,0.7);
 }
+summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+summary::marker {
+    content: "";
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::after {
+    content: " ▼";
+}
+
+details[open] summary::after {
+    content: " ▲";
+}
 footer {
   padding: 20px 30px;
     display: block;
