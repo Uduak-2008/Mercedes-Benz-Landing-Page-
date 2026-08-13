@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ .item img{
+    width: 150px;
+    max-width: 1000px;
+  border-radius: 15px 15px 0 0;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+.container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.item h1{
+  font-size: 12;
+}
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(4),
+.item:nth-child(5) {
+  flex-grow: 1;
+}
+
+.item:nth-child(3) {
+  width: 100%;
+}

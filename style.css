@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-    /* Black to Silver */
 background: linear-gradient(to right, #000000, #C0C0C0);
     color: white;
   text-align: center;
@@ -54,6 +53,9 @@ nav a{
 nav a:hover{
     color: silver;
 }
+.text-box h1 {
+  font-size: 22px;
+}
 .text-box{
   align-items: center;
   padding: 20px;
@@ -80,6 +82,76 @@ nav a:hover{
     max-width: 1000px;
   border-radius: 15px 15px 0 0;
     box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+#center {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+#box2 {
+    width: 350px;
+    max-width: 1000px;
+  border-radius: 15px 15px 0 0;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+.card h1{
+  font-size: 22px;
+}
+.card{
+  align-items: center;
+  padding: 20px;
+  display: block;
+  font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+  background-color: silver;
+    color: black;
+    width: 350px;
+    max-width: 1000px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+#bottom {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+#image {
+  width: 350px;
+    max-width: 1000px;
+  border-radius: 15px 15px 0 0;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+.card2 h1{
+  font-size: 22px;
+}
+.card2 {
+  align-items: center;
+  padding: 20px;
+  display: block;
+  font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+  background-color: silver;
+    color: black;
+    width: 350px;
+    max-width: 1000px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+details summary {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
 }
 summary {
     list-style: none;
@@ -111,6 +183,9 @@ footer {
   background: black;
   color: white;
   text-align: center;
+}
+html {
+  scroll-behavior: smooth;
 }
 footer a{
   text-decoration: none;
