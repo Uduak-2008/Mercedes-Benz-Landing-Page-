@@ -42,20 +42,21 @@ section{
   color: black;
 }
 
-.item:nth-child(2) section {
+.item:nth-child(2) section{
   background-color: #1a1a2e; /* dark navy - AMG */
-  color: black;
+  color: silver;
 }
-
+.item:nth-child(2) section summary{
+  color: silver;
+}
 .item:nth-child(3) section {
   background-color: black;
-  text-align: center;
 }
 .item:nth-child(3) section summary {
-  display:inline-block;
+  display: block;
+  justify-content: center;
   text-align: center;
 }
-item:nth-child(3) details h1,
 .item:nth-child(3) section,
 .item:nth-child(3) h1,
 .item:nth-child(3) section summary,

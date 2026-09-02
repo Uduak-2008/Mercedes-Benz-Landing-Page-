@@ -156,7 +156,14 @@ summary {
     list-style: none;
     cursor: pointer;
 }
-
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+.text-box details summary:hover,
+.text-box details summary:focus,
+.text-box details summary:active {
+  background-color: maroon;
+}
 summary::marker {
     content: "";
 }
