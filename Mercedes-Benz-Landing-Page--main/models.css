@@ -1,0 +1,76 @@
+.container {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item img{
+  width: 150px;
+  max-width: 1000px;
+  border-radius: 15px 15px 0 0;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+.item p{
+  font-size: 14px;
+}
+section{
+  align-items: center;
+  padding: 20px;
+  display: block;
+  font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    width: 150px;
+    max-width: 1000px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+
+.item:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+.item:nth-child(1) section {
+  background-color: #8B0000; /* dark red - GLE */
+  color: black;
+}
+
+.item:nth-child(2) section{
+  background-color: #1a1a2e; /* dark navy - AMG */
+  color: silver;
+}
+.item:nth-child(2) section summary{
+  color: silver;
+}
+.item:nth-child(3) section {
+  background-color: black;
+}
+.item:nth-child(3) section summary {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.item:nth-child(3) section,
+.item:nth-child(3) h1,
+.item:nth-child(3) section summary,
+.item:nth-child(3) section p {
+  color: white;
+}
+
+.item:nth-child(4) section,
+.item:nth-child(4) section summary {
+  background-color: #2f4f2f; /* dark green */
+  color: wheat;
+}
+
+.item:nth-child(5) section {
+  background-color: silver;
+  color: black;
+}
