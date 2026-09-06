@@ -143,9 +143,10 @@ nav a:hover{
     box-shadow: 0 20px 60px rgba(0,0,0,0.7);
 }
 details summary {
+  background: linear-gradient(45deg, #8B0000, #1a1a1a);
     font-size: 18px;
     font-weight: 600;
-    color: black;
+    color: white;
     padding: 12px 20px;
     border-radius: 8px;
     cursor: pointer;
