@@ -142,8 +142,8 @@ nav a:hover{
     border-radius: 0 0 15px 15px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.7);
 }
-details summary {
-  background: linear-gradient(45deg, #8B0000, #1a1a1a);
+.text-box details summary {
+  background-color: maroon;
     font-size: 18px;
     font-weight: 600;
     color: black;
@@ -153,6 +153,17 @@ details summary {
     display: inline-block;
     list-style: none;
 }
+details summary {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+}
+
 summary {
     list-style: none;
     cursor: pointer;
