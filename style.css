@@ -84,11 +84,11 @@ nav a:hover{
 }
 #center {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: 20px;
   margin: 0 auto;
   max-width: 800px;
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 .card-wrapper {
   display: flex;
