@@ -87,8 +87,9 @@ nav a:hover{
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   gap: 20px;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1150px;
     padding: 60px 20px;
+    justify-items: center;
 }
 .card-wrapper {
   display: flex;
@@ -96,6 +97,7 @@ nav a:hover{
   overflow: hidden;
   width: 100%;
   max-width: 350px;
+  margin: 0 auto;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.7);
 }
