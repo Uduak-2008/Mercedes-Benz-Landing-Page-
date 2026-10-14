@@ -11,7 +11,7 @@
     grid-template-columns: repeat(5, 1fr);
     gap: clamp(20px, 2vw, 40px);
     padding: clamp(20px, 4vw, 40px);
-    align-items: stretch;
+    align-items: start;
   }
   .item {
     max-width: none;
@@ -19,18 +19,40 @@
   
 }
 @media (max-width: 767px) {
-  .item:nth-child(3) {
+  .container .item img {
+    object-fit: cover;
+  }
+  .container .item:nth-child(3) {
     grid-column: 1 / -1;
+    width: 55%;
+    justify-self: center;
   }
-  .item img {
-    height: 200px;
+  .container {
+    padding: 12px;
+    gap: 12px;
   }
+  .container .item img {
+    height: 180px;
+  }
+  .container .item:nth-child(3) {
+    width: 55%;
+  }
+  .container .item section {
+    padding: 10px;
+  }
+  .container .item section h1 {
+    font-size: 1rem;
+  }
+  .container .item section summary,
+  .container .item section p {
+    font-size: 1rem;
+}
 }
 
 .item {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: start;
   width: 100%;
   justify-self: center;
 }
@@ -57,7 +79,6 @@ section{
     font-weight: 400;
     font-style: normal;
     width: 100%;
-    flex: 1;
     max-width: none;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.7);
