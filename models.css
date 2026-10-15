@@ -4,11 +4,21 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+.container .item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.container .item:nth-child(3) img {
+  object-position: center 70%;
+}
 @media (min-width: 768px) {
   .container {
     max-width: 1400px;
     margin: 0 auto;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: clamp(20px, 2vw, 40px);
     padding: clamp(20px, 4vw, 40px);
     align-items: start;
@@ -24,7 +34,7 @@
   }
   .container .item:nth-child(3) {
     grid-column: 1 / -1;
-    width: 55%;
+    width: calc(50% - 6px);
     justify-self: center;
   }
   .container {
@@ -48,7 +58,23 @@
     font-size: 1rem;
 }
 }
+/* 1. Reserve space for 3 heading lines so every card lines up */
+.container .item section h1 {
+  min-height: 3.6em;
+}
 
+/* 2. Make all cards equal height, but only while none are open */
+.container:not(:has(details[open])) {
+  align-items: stretch;
+}
+
+.container:not(:has(details[open])) .item {
+  height: 100%;
+}
+
+.container:not(:has(details[open])) .item section {
+  flex: 1;
+}
 .item {
   display: flex;
   flex-direction: column;
