@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercedez Benz Landing Page</title>
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css">  
     </head>
     <body>
       <header>
@@ -13,6 +14,34 @@
       <a href="index.html">Back</a>
     </nav>
     </header>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>If you have any questions or inquiries, please feel free to reach out to us using the form below or contact us via WhatsApp.</p>
+    </section>
+    <form action="https://formsubmit.co/uduakabasi.codes@gmail.com" method="POST">
+      <fieldset>
+        <legend>Contact Form</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+      <fieldset>
+  <label for="enquries">Enquiries:</label>
+  <select id="enquries" name="enquries" required>
+    <option value="">Select an option</option>
+    <option value="general">General Inquiry</option>
+    <option value="sales">Sales</option>
+    <option value="service">Service</option>
+  </select>
+</fieldset>
+      <fieldset>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+</fieldset>
+        <button type="submit">Submit</button>
+    </form>
  <div class="button-container">
   <a href="https://wa.me/2347010623335">
     <button class="whatsapp-btn">Whatsapp Me</button>
