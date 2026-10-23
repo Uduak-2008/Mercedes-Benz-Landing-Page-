@@ -1,13 +1,15 @@
 .contact-section{
-    background-color: #8B0000;
-    color: black;
-     width: 50vw;
-    min-width: 789px;
-    max-width: 1400px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.6);
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  color: white;
+    width: 90%;
+  max-width: 500px;
     margin: 20px auto;
-    padding: 2em;
+    padding: clamp(20px, 4vw, 40px);
     border-radius: 10px;
-    border: 5px solid black;
 }
 .contact-section h2{
     font-family: "Segoe UI", Arial, sans-serif;
@@ -15,10 +17,14 @@
     font-weight: 600;
     font-style: normal;
 }
+.contact-section p {
+  margin-bottom: 1.5rem;
+}
+
 form{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0;
 
 }
 fieldset{
@@ -40,4 +46,31 @@ input,
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 20px auto 0;
+  display: block;
+  width: 260px;
+  max-width: 100%;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #c0c0c0;
+  box-shadow: 0 0 8px rgba(192, 192, 192, 0.8);
+  transition: all 0.3s ease;
 }
