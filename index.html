@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+        <div id="splashScreen">
+  <img src="Mercedes-logo.jpg" alt="Logo" class="splash-img">
+  <p class="splash-text">Drive Luxury</p>
+</div>
+<script>
+  var splash = document.getElementById('splashScreen');
+
+  if (sessionStorage.getItem('splashSeen')) {
+    splash.style.display = 'none';
+  } else {
+    sessionStorage.setItem('splashSeen', 'yes');
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        splash.style.display = 'none';
+      }, 3000);
+    });
+  }
+</script>
     <header>
     <img src="Mercedes-logo.jpg" alt="Mercedes-Benz Logo" class="logo">
       <nav>
