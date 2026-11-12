@@ -118,12 +118,13 @@ nav a:hover{
 #center {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
+  gap: 30px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   max-width: 1150px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 40px;
+  justify-content: safe center;
 }
 .card-wrapper {
   display: flex;
@@ -136,7 +137,7 @@ nav a:hover{
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.7);
 }
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   #center {
     justify-content: center;
     flex-wrap: wrap;
